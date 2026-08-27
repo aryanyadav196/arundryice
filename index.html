@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Dry Ice quantity based ordering system"
+    >
+
+    <title>ARUN DRY ICE | Order</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         APP
+    ====================================================== -->
+
+    <div class="app">
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <header class="site-header">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+
+                    <img
+                        src="./img/logo.jpeg"
+                        alt="ARUN DRY ICE Logo"
+                    >
+
+                </div>
+
+                <div>
+
+                    <h1>
+                        ARUN DRY ICE
+                    </h1>
+
+                    <p>
+                        Hello & Welcome!
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="header-contact">
+
+                <span class="header-contact-label">
+                    Need Help?
+                </span>
+
+                <a
+                    href="tel:+919323735889"
+                    class="header-contact-number"
+                >
+                    ☎ +91 93237 35889
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             STEP INDICATOR
+        ================================================== -->
+
+        <div class="step-wrapper">
+
+            <div
+                class="step-item active"
+                id="stepIndicator1"
+            >
+
+                <span class="step-number">
+                    1
+                </span>
+
+                <span class="step-label">
+                    Product
+                </span>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <div
+                class="step-item"
+                id="stepIndicator2"
+            >
+
+                <span class="step-number">
+                    2
+                </span>
+
+                <span class="step-label">
+                    Details
+                </span>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <div
+                class="step-item"
+                id="stepIndicator3"
+            >
+
+                <span class="step-number">
+                    3
+                </span>
+
+                <span class="step-label">
+                    Payment
+                </span>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <div
+                class="step-item"
+                id="stepIndicator4"
+            >
+
+                <span class="step-number">
+                    4
+                </span>
+
+                <span class="step-label">
+                    Complete
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             MAIN CONTENT
+        ================================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =================================================
+                 STEP 1 — PRODUCT
+            ================================================== -->
+
+            <section
+                class="order-step active"
+                id="productStep"
+            >
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        STEP 01
+                    </span>
+
+                    <h2>
+                        Choose Your Quantity
+                    </h2>
+
+                    <p>
+                        Select how much Dry Ice you need and see your
+                        savings instantly.
+                    </p>
+
+                </div>
+
+
+                <!-- PRODUCT CARD -->
+
+                <div class="product-layout">
+
+
+                    <!-- PRODUCT IMAGE -->
+
+                    <div class="product-image-card">
+
+                        <img
+                            id="productImage"
+                            src="./img/DRY_ICE.png"
+                            alt="Dry Ice"
+                        >
+
+                    </div>
+
+
+                    <!-- PRODUCT DETAILS -->
+
+                    <div class="product-details">
+
+                        <div class="product-info">
+
+                            <span class="product-tag">
+                                AVAILABLE
+                            </span>
+
+                            <h2 id="productName">
+                                DRY ICE
+                            </h2>
+
+                            <p id="productDescription">
+                                High-quality Dry Ice
+                                ▪️ Events and Entertainment
+                                ▪️ Pharmaceuticals and Medical Logistics
+                                ▪️ Food and Beverage Industry
+                                ▪️ Industrial Cooling and Laboratory
+                            </p>
+
+                        </div>
+
+
+                        <!-- PRICE BENEFIT -->
+
+                        <div class="product-price-benefit">
+
+                            <div class="price-benefit-label">
+                                TODAY'S SPECIAL PRICE
+                            </div>
+
+                            <div class="price-benefit-content">
+
+                                <span class="original-price">
+                                    ₹100 / Kg
+                                </span>
+
+                                <span class="discount-badge">
+                                    30% OFF
+                                </span>
+
+                                <strong class="offer-price">
+                                    ₹70 / Kg
+                                </strong>
+
+                            </div>
+
+                            <p class="price-benefit-message">
+                                You save ₹30 on every Kg.
+                            </p>
+
+                        </div>
+
+
+                        <!-- QUICK QUANTITY -->
+
+                        <div class="quantity-section">
+
+                            <label>
+                                Quick Quantity (Kg)
+                            </label>
+
+                            <div class="quantity-options">
+
+                                <button
+                                    type="button"
+                                    class="quantity-option"
+                                    data-quantity="1"
+                                >
+                                    1 Kg
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="quantity-option"
+                                    data-quantity="10"
+                                >
+                                    10 Kg
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="quantity-option"
+                                    data-quantity="25"
+                                >
+                                    25 Kg
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="quantity-option"
+                                    data-quantity="50"
+                                >
+                                    50 Kg
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="quantity-option"
+                                    data-quantity="100"
+                                >
+                                    100 Kg
+                                </button>
+
+                            </div>
+
+                            <small class="quantity-help">
+                                Choose a quantity or enter your own below.
+                            </small>
+
+                        </div>
+
+
+                        <!-- CUSTOM QUANTITY -->
+
+                        <div class="quantity-section">
+
+                            <label for="quantityInput">
+                                Enter Your Quantity (Kg)
+                            </label>
+
+                            <div class="quantity-control">
+
+                                <button
+                                    type="button"
+                                    id="decreaseQuantity"
+                                    class="quantity-btn"
+                                    aria-label="Decrease quantity"
+                                >
+                                    −
+                                </button>
+
+                                <input
+                                    type="number"
+                                    id="quantityInput"
+                                    placeholder="Enter quantity"
+                                    inputmode="numeric"
+                                    min="1"
+                                    step="1"
+                                >
+
+                                <button
+                                    type="button"
+                                    id="increaseQuantity"
+                                    class="quantity-btn"
+                                    aria-label="Increase quantity"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- LIVE SAVINGS MESSAGE -->
+
+                        <div
+                            id="pricingMessage"
+                            class="pricing-message"
+                        >
+                            You save ₹30 on 1 Kg with today's 30% discount.
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     PRICE SUMMARY
+                ================================================== -->
+
+                <div class="price-card">
+
+                    <div class="price-card-header">
+
+                        <div>
+
+                            <span>
+                                ORDER SUMMARY
+                            </span>
+
+                            <h3>
+                                Your Price
+                            </h3>
+
+                        </div>
+
+                        <div class="quantity-badge">
+
+                            Qty:
+                            <strong id="summaryQuantity">
+                                1
+                            </strong>
+
+                            Kg
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         REGULAR VS DISCOUNTED PRICE
+                    ================================================== -->
+
+                    <div class="price-comparison">
+
+                        <!-- REGULAR PRICE -->
+
+                        <div class="price-comparison-section regular-price-section">
+
+                            <div class="price-comparison-heading">
+
+                                <span>
+                                    REGULAR PRICE
+                                </span>
+
+                                <strong>
+                                    ₹100 / Kg
+                                </strong>
+
+                            </div>
+
+
+                            <div class="price-row">
+
+                                <span>
+                                    Regular Price / Kg
+                                </span>
+
+                                <strong id="regularPricePerUnit">
+                                    ₹100
+                                </strong>
+
+                            </div>
+
+
+                            <div class="price-row">
+
+                                <span>
+                                    Regular Product Cost
+                                </span>
+
+                                <strong id="regularProductCost">
+                                    ₹100
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- DISCOUNTED PRICE -->
+
+                        <div class="price-comparison-section discounted-price-section">
+
+                            <div class="price-comparison-heading">
+
+                                <span>
+                                    YOUR DISCOUNTED PRICE
+                                </span>
+
+                                <strong id="comparisonDiscountedPrice">
+                                    ₹70 / Kg
+                                </strong>
+
+                            </div>
+
+
+                            <div class="price-row">
+
+                                <span>
+                                    Your Price / Kg
+                                </span>
+
+                                <strong id="pricePerUnit">
+                                    ₹70
+                                </strong>
+
+                            </div>
+
+
+                            <div class="price-row">
+
+                                <span>
+                                    Discounted Product Cost
+                                </span>
+
+                                <strong id="comparisonProductCost">
+                                    ₹70
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SAVINGS -->
+
+                        <div class="price-comparison-section saving-price-section">
+
+                            <div class="price-comparison-heading">
+
+                                <span>
+                                    YOUR SAVINGS
+                                </span>
+
+                                <strong id="savingPerUnit">
+                                    ₹30 / Kg
+                                </strong>
+
+                            </div>
+
+
+                            <div class="price-row">
+
+                                <span>
+                                    You Save / Kg
+                                </span>
+
+                                <strong id="savingPerUnitDisplay">
+                                    ₹30
+                                </strong>
+
+                            </div>
+
+
+                            <div class="price-row">
+
+                                <span>
+                                    Total Saving
+                                </span>
+
+                                <strong id="totalSaving">
+                                    ₹30
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         ACTUAL ORDER PRICE
+                    ================================================== -->
+
+                    <div class="price-list">
+
+                        <div class="price-row">
+
+                            <span>
+                                Product Cost
+                            </span>
+
+                            <strong id="productCost">
+                                ₹70
+                            </strong>
+
+                        </div>
+
+
+                        <div class="price-row">
+
+                            <span>
+                                Delivery
+                            </span>
+
+                            <strong id="deliveryCost">
+                                ₹200
+                            </strong>
+
+                        </div>
+
+
+                        <div class="price-row">
+
+                            <span>
+                                Platform Fee
+                            </span>
+
+                            <strong id="platformFee">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="price-row discount-row">
+
+                            <span>
+                                Discount (30% OFF)
+                            </span>
+
+                            <strong id="discount">
+                                - ₹30
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SAVINGS HIGHLIGHT -->
+
+                    <div class="savings-highlight">
+
+                        <div>
+
+                            <span>
+                                YOUR DISCOUNT
+                            </span>
+
+                            <strong>
+                                30% OFF
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                YOU SAVE
+                            </span>
+
+                            <strong id="savingsAmount">
+                                ₹30
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TOTAL -->
+
+                    <div class="total-row">
+
+                        <span>
+                            Total Amount
+                        </span>
+
+                        <strong id="totalPrice">
+                            ₹270
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BUY NOW -->
+
+                <div class="action-area">
+
+                    <button
+                        type="button"
+                        id="buyNowButton"
+                        class="primary-btn"
+                    >
+
+                        <span>
+                            Continue to Order
+                        </span>
+
+                        <span class="btn-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 STEP 2 — CUSTOMER INFORMATION
+            ================================================== -->
+
+            <section
+                class="order-step"
+                id="customerStep"
+            >
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        STEP 02
+                    </span>
+
+                    <h2>
+                        Delivery Details
+                    </h2>
+
+                    <p>
+                        Tell us where and when you want your Dry Ice.
+                        Your order price is already calculated.
+                    </p>
+
+                </div>
+
+
+                <form
+                    id="customerForm"
+                    class="customer-form"
+                    novalidate
+                >
+
+                    <!-- CUSTOMER BASIC INFO -->
+
+                    <div class="form-card">
+
+                        <div class="form-card-title">
+
+                            <div class="form-icon">
+                                👤
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Your Details
+                                </h3>
+
+                                <p>
+                                    We need these details to contact you
+                                    about your order.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <!-- NAME -->
+
+                            <div class="form-group">
+
+                                <label for="customerName">
+
+                                    Full Name
+
+                                    <span>
+                                        *
+                                    </span>
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="customerName"
+                                    name="customerName"
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- PHONE -->
+
+                            <div class="form-group">
+
+                                <label for="customerPhone">
+
+                                    Phone Number
+
+                                    <span>
+                                        *
+                                    </span>
+
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="customerPhone"
+                                    name="customerPhone"
+                                    placeholder="Enter your phone number"
+                                    autocomplete="tel"
+                                    inputmode="tel"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- PLACE -->
+
+                            <div class="form-group">
+
+                                <label for="customerPlace">
+
+                                    Place / City
+
+                                    <span>
+                                        *
+                                    </span>
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="customerPlace"
+                                    name="customerPlace"
+                                    placeholder="Enter your place or city"
+                                    autocomplete="address-level2"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- ADDRESS URL -->
+
+                            <div class="form-group">
+
+                                <label for="AddressUrl">
+
+                                    Address URL
+
+                                    <small>
+                                        Optional
+                                    </small>
+
+                                </label>
+
+                                <input
+                                    type="url"
+                                    id="AddressUrl"
+                                    name="AddressUrl"
+                                    placeholder="Google Maps / Location link"
+                                    autocomplete="url"
+                                >
+
+                            </div>
+
+
+                            <!-- ADDRESS -->
+
+                            <div class="form-group full-width">
+
+                                <label for="customerAddress">
+
+                                    Complete Address
+
+                                    <span>
+                                        *
+                                    </span>
+
+                                </label>
+
+                                <textarea
+                                    id="customerAddress"
+                                    name="customerAddress"
+                                    rows="4"
+                                    placeholder="Enter your complete delivery address"
+                                    autocomplete="street-address"
+                                    required
+                                ></textarea>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DATE & TIME -->
+
+                    <div class="form-card">
+
+                        <div class="form-card-title">
+
+                            <div class="form-icon">
+                                📅
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    When Do You Need It?
+                                </h3>
+
+                                <p>
+                                    Select your preferred delivery date
+                                    and time.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="date-time-grid">
+
+                            <!-- DATE -->
+
+                            <div class="form-group">
+
+                                <label for="requestedDate">
+
+                                    Delivery Date
+
+                                    <span>
+                                        *
+                                    </span>
+
+                                </label>
+
+                                <div class="input-with-icon">
+
+                                    <span>
+                                        📅
+                                    </span>
+
+                                    <input
+                                        type="date"
+                                        id="requestedDate"
+                                        name="requestedDate"
+                                        required
+                                    >
+
+                                </div>
+
+                                <small class="field-help">
+                                    Choose the date you need the order.
+                                </small>
+
+                            </div>
+
+
+                            <!-- TIME -->
+
+                            <div class="form-group">
+
+                                <label for="requestedTime">
+
+                                    Preferred Time
+
+                                    <span>
+                                        *
+                                    </span>
+
+                                </label>
+
+                                <div class="input-with-icon">
+
+                                    <span>
+                                        🕐
+                                    </span>
+
+                                    <input
+                                        type="time"
+                                        id="requestedTime"
+                                        name="requestedTime"
+                                        required
+                                    >
+
+                                </div>
+
+                                <small class="field-help">
+                                    Choose your preferred delivery time.
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SAVED INFO NOTICE -->
+
+                    <div class="saved-info-notice">
+
+                        <div class="notice-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Your information is saved on this device.
+                            </strong>
+
+                            <p>
+                                Next time, your details will be filled
+                                automatically. You can change them whenever
+                                needed.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CUSTOMER PREVIEW -->
+
+                    <div class="mini-order-card">
+
+                        <div>
+
+                            <span>
+                                PRODUCT
+                            </span>
+
+                            <strong id="customerProductName">
+                                DRY ICE
+                            </strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                QUANTITY
+                            </span>
+
+                            <strong id="customerQuantity">
+                                1 Kg
+                            </strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                YOU SAVE
+                            </span>
+
+                            <strong id="customerSavings">
+                                ₹30
+                            </strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                TOTAL
+                            </span>
+
+                            <strong id="customerTotal">
+                                ₹270
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NAVIGATION -->
+
+                    <div class="navigation-buttons">
+
+                        <button
+                            type="button"
+                            id="backToProduct"
+                            class="secondary-btn"
+                        >
+
+                            <span>
+                                ←
+                            </span>
+
+                            Back
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            id="customerNextButton"
+                            class="primary-btn"
+                        >
+
+                            Continue to Payment
+
+                            <span class="btn-arrow">
+                                →
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            <!-- =================================================
+                 STEP 3 — PAYMENT
+            ================================================== -->
+
+            <section
+                class="order-step"
+                id="paymentStep"
+            >
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        STEP 03
+                    </span>
+
+                    <h2>
+                        Complete Your Payment
+                    </h2>
+
+                    <p>
+                        Pay the exact amount shown below using any supported
+                        UPI app.
+                    </p>
+
+                </div>
+
+
+                <!-- PAYMENT AMOUNT -->
+
+                <div class="payment-total-card">
+
+                    <span>
+                        FINAL AMOUNT TO PAY
+                    </span>
+
+                    <strong id="paymentTotal">
+                        ₹0
+                    </strong>
+
+                    <p>
+                        This is the final amount for your order.
+                    </p>
+
+                    <p id="paymentOrderId">
+                        Order ID: —
+                    </p>
+
+                </div>
+
+
+                <!-- QR AREA -->
+
+                <div class="scanner-card">
+
+                    <div class="scanner-heading">
+
+                        <span class="scanner-icon">
+                            ▣
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Scan & Pay
+                            </h3>
+
+                            <p>
+                                Scan this QR code with your UPI app.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="scanner-image-wrapper">
+
+                        <img
+                            id="scannerImage"
+                            src="./img/Scanner.jpeg"
+                            alt="Payment Scanner QR Code"
+                        >
+
+                    </div>
+
+
+                    <a
+                        id="downloadScanner"
+                        href="./img/Scanner.jpeg"
+                        download="Dry-Ice-Payment-QR.jpeg"
+                        class="download-scanner"
+                    >
+                        ↓ Download Payment QR
+                    </a>
+
+
+                    <div class="payment-instruction">
+
+                        <strong>
+                            How to Pay
+                        </strong>
+
+                        <p>
+                            1. Open your UPI app.
+                        </p>
+
+                        <p>
+                            2. Scan the QR code.
+                        </p>
+
+                        <p>
+                            3. Pay the exact amount shown above.
+                        </p>
+
+                        <p>
+                            4. Keep your payment confirmation available
+                            for verification.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAYMENT INFORMATION -->
+
+                <div class="payment-info-card">
+
+                    <div class="payment-info-row">
+
+                        <span>
+                            Order ID
+                        </span>
+
+                        <strong id="paymentOrderIdDuplicate">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="payment-info-row">
+
+                        <span>
+                            Date
+                        </span>
+
+                        <strong id="paymentDate">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="payment-info-row">
+
+                        <span>
+                            Time
+                        </span>
+
+                        <strong id="paymentTime">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="payment-info-row highlight">
+
+                        <span>
+                            Amount to Pay
+                        </span>
+
+                        <strong id="paymentAmount">
+                            ₹0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="payment-info-row">
+
+                        <span>
+                            Payment Status
+                        </span>
+
+                        <strong id="paymentStatus">
+                            Payment in verification
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAYMENT NOTE -->
+
+                <div class="payment-note">
+
+                    <span>
+                        ℹ
+                    </span>
+
+                    <p>
+                        After completing the payment, click
+                        <strong>
+                            Payment Done
+                        </strong>.
+                        Your payment will then move to
+                        <strong>
+                            Payment in verification
+                        </strong>.
+                    </p>
+
+                </div>
+
+
+                <!-- NAVIGATION -->
+
+                <div class="navigation-buttons">
+
+                    <button
+                        type="button"
+                        id="backToCustomer"
+                        class="secondary-btn"
+                    >
+
+                        <span>
+                            ←
+                        </span>
+
+                        Back
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        id="paymentNextButton"
+                        class="primary-btn"
+                    >
+
+                        Payment Done
+
+                        <span class="btn-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 STEP 4 — FINAL SUMMARY
+            ================================================== -->
+
+            <section
+                class="order-step"
+                id="summaryStep"
+            >
+
+                <!-- SUCCESS HEADER -->
+
+                <div class="success-header">
+
+                    <div class="success-icon">
+                        ✓
+                    </div>
+
+                    <span class="eyebrow">
+                        ORDER SUBMITTED
+                    </span>
+
+                    <h2>
+                        Your Order Summary
+                    </h2>
+
+                    <p>
+                        Your payment has been submitted and is currently
+                        under verification.
+                    </p>
+
+                </div>
+
+
+                <!-- ORDER ID -->
+
+                <div class="order-id-card">
+
+                    <span>
+                        ORDER ID
+                    </span>
+
+                    <strong id="finalOrderId">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <!-- FINAL ORDER CARD -->
+
+                <div
+                    class="final-order-card"
+                    id="finalOrderCard"
+                >
+
+                    <!-- INVOICE HEADER -->
+
+                    <div class="invoice-header">
+
+                        <div>
+
+                            <span class="invoice-label">
+                                ORDER CONFIRMATION
+                            </span>
+
+                            <h2>
+                                ARUN DRY ICE
+                            </h2>
+
+                            <p>
+                                Dry Ice Order Details
+                            </p>
+
+                        </div>
+
+                        <div class="invoice-status">
+
+                            <span>
+                                PAYMENT STATUS
+                            </span>
+
+                            <strong id="finalPaymentStatus">
+                                Payment in verification
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CUSTOMER -->
+
+                    <div class="summary-section">
+
+                        <div class="summary-section-header">
+
+                            <div class="summary-icon">
+                                👤
+                            </div>
+
+                            <h3>
+                                Customer Information
+                            </h3>
+
+                        </div>
+
+
+                        <div class="summary-grid">
+
+                            <div class="summary-item">
+
+                                <span>
+                                    Name
+                                </span>
+
+                                <strong id="finalName">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div class="summary-item">
+
+                                <span>
+                                    Phone Number
+                                </span>
+
+                                <strong id="finalPhone">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div class="summary-item">
+
+                                <span>
+                                    Place / City
+                                </span>
+
+                                <strong id="finalPlace">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div class="summary-item">
+
+                                <span>
+                                    Place URL
+                                </span>
+
+                                <strong id="finalPlaceUrl">
+                                    Not provided
+                                </strong>
+
+                            </div>
+
+
+                            <div class="summary-item full-width">
+
+                                <span>
+                                    Address
+                                </span>
+
+                                <strong id="finalAddress">
+                                    —
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- REQUESTED DATE & TIME -->
+
+                    <div class="summary-section">
+
+                        <div class="summary-section-header">
+
+                            <div class="summary-icon">
+                                📅
+                            </div>
+
+                            <h3>
+                                Requested Date & Time
+                            </h3>
+
+                        </div>
+
+
+                        <div class="date-time-summary">
+
+                            <div class="requested-time-card">
+
+                                <span>
+                                    📅 Requested Date
+                                </span>
+
+                                <strong id="finalRequestedDate">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div class="requested-time-card">
+
+                                <span>
+                                    🕐 Requested Time
+                                </span>
+
+                                <strong id="finalRequestedTime">
+                                    —
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT -->
+
+                    <div class="summary-section">
+
+                        <div class="summary-section-header">
+
+                            <div class="summary-icon">
+                                📦
+                            </div>
+
+                            <h3>
+                                Product Information
+                            </h3>
+
+                        </div>
+
+
+                        <div class="summary-grid">
+
+                            <div class="summary-item">
+
+                                <span>
+                                    Product
+                                </span>
+
+                                <strong id="finalProduct">
+                                    DRY ICE
+                                </strong>
+
+                            </div>
+
+
+                            <div class="summary-item">
+
+                                <span>
+                                    Quantity
+                                </span>
+
+                                <strong id="finalQuantity">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div class="summary-item">
+
+                                <span>
+                                    Regular Price / Kg
+                                </span>
+
+                                <strong id="finalRegularPricePerKg">
+                                    ₹100
+                                </strong>
+
+                            </div>
+
+
+                            <div class="summary-item">
+
+                                <span>
+                                    Your Price / Kg
+                                </span>
+
+                                <strong id="finalPricePerKg">
+                                    ₹70
+                                </strong>
+
+                            </div>
+
+
+                            <div class="summary-item">
+
+                                <span>
+                                    Regular Product Cost
+                                </span>
+
+                                <strong id="finalRegularProductCost">
+                                    ₹100
+                                </strong>
+
+                            </div>
+
+
+                            <div class="summary-item">
+
+                                <span>
+                                    Discounted Product Cost
+                                </span>
+
+                                <strong id="finalDiscountedProductCost">
+                                    ₹70
+                                </strong>
+
+                            </div>
+
+
+                            <div class="summary-item">
+
+                                <span>
+                                    Total Saving
+                                </span>
+
+                                <strong id="finalTotalSaving">
+                                    ₹30
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRICE -->
+
+                    <div class="summary-section">
+
+                        <div class="summary-section-header">
+
+                            <div class="summary-icon">
+                                ₹
+                            </div>
+
+                            <h3>
+                                Payment Details
+                            </h3>
+
+                        </div>
+
+
+                        <div class="price-list final-price-list">
+
+                            <div class="price-row">
+
+                                <span>
+                                    Product Cost
+                                </span>
+
+                                <strong id="finalProductCost">
+                                    ₹70
+                                </strong>
+
+                            </div>
+
+
+                            <div class="price-row">
+
+                                <span>
+                                    Delivery
+                                </span>
+
+                                <strong id="finalDelivery">
+                                    ₹0
+                                </strong>
+
+                            </div>
+
+
+                            <div class="price-row">
+
+                                <span>
+                                    Platform Fee
+                                </span>
+
+                                <strong id="finalPlatformFee">
+                                    ₹0
+                                </strong>
+
+                            </div>
+
+
+                            <div class="price-row discount-row">
+
+                                <span>
+                                    You Save (30% OFF)
+                                </span>
+
+                                <strong id="finalDiscount">
+                                    ₹30
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="final-total-row">
+
+                            <span>
+                                TOTAL AMOUNT
+                            </span>
+
+                            <strong id="finalTotal">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PAYMENT STATUS -->
+
+                    <div class="summary-section payment-verification-section">
+
+                        <div class="summary-section-header">
+
+                            <div class="summary-icon">
+                                ✓
+                            </div>
+
+                            <h3>
+                                Payment Verification
+                            </h3>
+
+                        </div>
+
+
+                        <div class="payment-verification-box">
+
+                            <span>
+                                Current Payment Status
+                            </span>
+
+                            <strong id="finalPaymentStatusBottom">
+                                Payment in verification
+                            </strong>
+
+                            <p>
+                                Your payment has been submitted.
+                                The payment status will be verified
+                                before the order is processed.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ORDER TIMESTAMP -->
+
+                    <div class="summary-section">
+
+                        <div class="summary-section-header">
+
+                            <div class="summary-icon">
+                                🕐
+                            </div>
+
+                            <h3>
+                                Order Created
+                            </h3>
+
+                        </div>
+
+
+                        <div class="created-info">
+
+                            <div>
+
+                                <span>
+                                    Date
+                                </span>
+
+                                <strong id="finalDate">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Time
+                                </span>
+
+                                <strong id="finalTime">
+                                    —
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DOWNLOAD / SHARE -->
+
+                <div class="share-actions">
+
+                    <button
+                        type="button"
+                        id="downloadPdfButton"
+                        class="secondary-btn"
+                        style="background-color: orangered; color: white;"
+                    >
+                        📃 Download PDF / Chart
+                    </button>
+
+
+                    <button
+                        type="button"
+                        id="shareButton"
+                        class="secondary-btn"
+                        style="background-color: orange; color: white;"
+                    >
+                        📤 Share Order
+                    </button>
+
+
+                    <button
+                        type="button"
+                        id="submitButton"
+                        class="secondary-btn"
+                        style="background-color: #00dd21; color: white;"
+                    >
+                        ✔️ Submit
+                    </button>
+
+                </div>
+
+
+                <!-- FINAL NAVIGATION -->
+
+                <div class="navigation-buttons final-navigation">
+
+                    <button
+                        type="button"
+                        id="backToPayment"
+                        class="secondary-btn"
+                    >
+
+                        <span>
+                            ←
+                        </span>
+
+                        Back
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        id="newOrderButton"
+                        class="primary-btn"
+                    >
+
+                        New Order
+
+                        <span class="btn-arrow">
+                            ↻
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
+
+        <footer class="site-footer">
+
+            <p>
+                ARUN DRY ICE
+            </p>
+
+            <p>
+                Your information stays on this device
+                until you clear your browser data.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

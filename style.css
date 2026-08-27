@@ -1,0 +1,2623 @@
+/* =========================================================
+   ARUN DRY ICE
+   PROFESSIONAL ORDER UI
+   style.css
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f5f7fb;
+    color: #172033;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   APP
+========================================================= */
+
+.app {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e9f0;
+    padding: 16px 24px;
+}
+
+.brand {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.brand-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 11px;
+}
+
+.brand h1 {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+.brand p {
+    margin-top: 3px;
+    color: #667085;
+    font-size: 11px;
+}
+
+/* =========================================================
+   PROFESSIONAL HEADER CONTACT
+========================================================= */
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.header-contact-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    white-space: nowrap;
+}
+
+.header-contact-number {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    color: #172033;
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.header-contact-number:hover {
+    color: #1667d9;
+}
+
+
+/* =========================================================
+   STEP INDICATOR
+========================================================= */
+
+.step-wrapper {
+    width: 100%;
+    max-width: 760px;
+
+    margin: 20px auto 8px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.step-item {
+    min-width: 76px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5px;
+
+    color: #98a2b3;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.step-number {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #edf0f4;
+    color: #667085;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.step-label {
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.step-item.active {
+    color: #2563eb;
+}
+
+.step-item.active .step-number {
+    background: #2563eb;
+    color: #ffffff;
+
+    box-shadow:
+        0 4px 10px rgba(37, 99, 235, 0.18);
+}
+
+.step-item.completed {
+    color: #16a34a;
+}
+
+.step-item.completed .step-number {
+    background: #16a34a;
+    color: #ffffff;
+}
+
+.step-line {
+    flex: 1;
+
+    max-width: 100px;
+    min-width: 35px;
+
+    height: 1px;
+
+    margin: 15px 6px 0;
+
+    background: #dfe4eb;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.main-content {
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 24px 20px 50px;
+}
+
+
+/* =========================================================
+   ORDER STEPS
+========================================================= */
+
+.order-step {
+    display: none;
+    width: 100%;
+}
+
+.order-step.active {
+    display: block;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.eyebrow {
+    display: inline-block;
+
+    color: #2563eb;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 1.3px;
+}
+
+.section-heading h2 {
+    margin-top: 4px;
+
+    font-size: clamp(25px, 4vw, 32px);
+    line-height: 1.15;
+
+    font-weight: 800;
+
+    color: #101828;
+}
+
+.section-heading p {
+    margin-top: 7px;
+
+    max-width: 680px;
+
+    color: #667085;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   PRODUCT LAYOUT
+========================================================= */
+
+.product-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.95fr)
+        minmax(0, 1.05fr);
+
+    gap: 18px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE
+========================================================= */
+
+.product-image-card {
+    min-height: 390px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 28px;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe5ec;
+    border-radius: 15px;
+
+    box-shadow:
+        0 2px 8px rgba(16, 24, 40, 0.03);
+}
+
+.product-image-card img {
+    width: 100%;
+    height: 100%;
+
+    max-height: 350px;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   PRODUCT DETAILS
+========================================================= */
+
+.product-details {
+    padding: 24px;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe5ec;
+    border-radius: 15px;
+
+    box-shadow:
+        0 2px 8px rgba(16, 24, 40, 0.03);
+}
+
+.product-tag {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 4px 8px;
+
+    border-radius: 999px;
+
+    background: #ecfdf3;
+    color: #15803d;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 0.7px;
+}
+
+.product-info h2 {
+    margin-top: 7px;
+
+    color: #101828;
+
+    font-size: 24px;
+    line-height: 1.15;
+}
+
+.product-info p {
+    margin-top: 7px;
+
+    color: #667085;
+
+    font-size: 11px;
+    line-height: 1.65;
+
+    white-space: pre-line;
+}
+
+
+/* =========================================================
+   PRODUCT PRICE BENEFIT
+========================================================= */
+
+.product-price-benefit {
+    margin-top: 18px;
+
+    padding: 13px 14px;
+
+    border-radius: 11px;
+
+    background: #f8fafc;
+    border: 1px solid #edf0f4;
+}
+
+.price-benefit-label {
+    color: #667085;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+}
+
+.price-benefit-content {
+    margin-top: 5px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+.original-price {
+    color: #98a2b3;
+
+    font-size: 11px;
+
+    text-decoration: line-through;
+}
+
+.discount-badge {
+    padding: 3px 6px;
+
+    border-radius: 5px;
+
+    background: #dcfce7;
+    color: #15803d;
+
+    font-size: 8px;
+    font-weight: 800;
+}
+
+.offer-price {
+    color: #2563eb;
+
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.price-benefit-message {
+    margin-top: 4px;
+
+    color: #15803d;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   QUANTITY
+========================================================= */
+
+.quantity-section {
+    margin-top: 19px;
+}
+
+.quantity-section > label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #344054;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.quantity-options {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 7px;
+}
+
+.quantity-option {
+    min-width: 0;
+
+    min-height: 38px;
+
+    padding: 7px 5px;
+
+    border: 1px solid #d8dee8;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #344054;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    transition:
+        background 0.15s ease,
+        color 0.15s ease,
+        border-color 0.15s ease,
+        transform 0.15s ease;
+}
+
+.quantity-option:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+
+    transform: translateY(-1px);
+}
+
+.quantity-option.active {
+    background: #2563eb;
+    border-color: #2563eb;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 3px 8px rgba(37, 99, 235, 0.15);
+}
+
+.quantity-help {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #98a2b3;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   CUSTOM QUANTITY
+========================================================= */
+
+.quantity-control {
+    width: 100%;
+    max-width: 310px;
+
+    display: grid;
+
+    grid-template-columns:
+        45px minmax(0, 1fr) 45px;
+
+    overflow: hidden;
+
+    border: 1px solid #d8dee8;
+    border-radius: 9px;
+
+    background: #ffffff;
+}
+
+.quantity-btn {
+    border: 0;
+
+    background: #f8fafc;
+    color: #344054;
+
+    font-size: 18px;
+    font-weight: 800;
+
+    transition:
+        background 0.15s ease,
+        color 0.15s ease;
+}
+
+.quantity-btn:hover {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.quantity-control input {
+    width: 100%;
+    min-width: 0;
+
+    border: 0;
+    outline: 0;
+
+    padding: 10px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    color: #172033;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.quantity-control input::-webkit-inner-spin-button,
+.quantity-control input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantity-control input[type="number"] {
+    appearance: textfield;
+}
+
+
+/* =========================================================
+   PRICING MESSAGE
+========================================================= */
+
+.pricing-message {
+    margin-top: 9px;
+
+    padding: 9px 11px;
+
+    border-radius: 8px;
+
+    background: #f8fafc;
+    color: #667085;
+
+    font-size: 9px;
+}
+
+.pricing-message.success {
+    background: #ecfdf3;
+    color: #15803d;
+}
+
+
+/* =========================================================
+   PRICE CARD
+========================================================= */
+
+.price-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe5ec;
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 2px 8px rgba(16, 24, 40, 0.03);
+}
+
+
+/* =========================================================
+   PRICE CARD HEADER
+========================================================= */
+
+.price-card-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 17px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5f9ff,
+            #f8f7ff
+        );
+
+    border-bottom: 1px solid #e7ebf1;
+}
+
+.price-card-header span {
+    display: block;
+
+    color: #667085;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.price-card-header h3 {
+    margin-top: 2px;
+
+    color: #101828;
+
+    font-size: 15px;
+}
+
+.quantity-badge {
+    flex-shrink: 0;
+
+    padding: 6px 9px;
+
+    border: 1px solid #dce3ec;
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #667085;
+
+    font-size: 9px;
+}
+
+.quantity-badge strong {
+    color: #172033;
+}
+
+
+/* =========================================================
+   PRICE COMPARISON
+========================================================= */
+
+.price-comparison {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 0;
+
+    border-bottom: 1px solid #e7ebf1;
+}
+
+.price-comparison-section {
+    padding: 17px 18px;
+
+    border-right: 1px solid #e7ebf1;
+}
+
+.price-comparison-section:last-child {
+    border-right: 0;
+}
+
+.price-comparison-heading {
+    min-height: 32px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    gap: 3px;
+
+    margin-bottom: 8px;
+}
+
+.price-comparison-heading span {
+    color: #667085;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 0.4px;
+}
+
+.price-comparison-heading strong {
+    color: #172033;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.discounted-price-section .price-comparison-heading strong {
+    color: #2563eb;
+}
+
+.saving-price-section {
+    background: #fbfefc;
+}
+
+.saving-price-section .price-comparison-heading strong {
+    color: #16a34a;
+}
+
+
+/* =========================================================
+   PRICE ROW
+========================================================= */
+
+.price-row {
+    min-height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 8px 0;
+
+    border-bottom: 1px solid #edf0f4;
+
+    font-size: 10px;
+}
+
+.price-row:last-child {
+    border-bottom: 0;
+}
+
+.price-row span {
+    color: #667085;
+}
+
+.price-row strong {
+    flex-shrink: 0;
+
+    color: #172033;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.discount-row strong {
+    color: #16a34a;
+}
+
+
+/* =========================================================
+   ACTUAL PRICE LIST
+========================================================= */
+
+.price-list {
+    padding: 5px 20px;
+}
+
+.price-list .price-row {
+    min-height: 42px;
+
+    font-size: 10px;
+}
+
+.price-list .price-row strong {
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   SAVINGS HIGHLIGHT
+========================================================= */
+
+.savings-highlight {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    margin: 0 20px;
+
+    border: 1px solid #d9f5e2;
+    border-radius: 9px;
+
+    overflow: hidden;
+
+    background: #f0fdf4;
+}
+
+.savings-highlight > div {
+    padding: 10px 13px;
+}
+
+.savings-highlight > div + div {
+    border-left: 1px solid #d9f5e2;
+}
+
+.savings-highlight span {
+    display: block;
+
+    color: #15803d;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 0.7px;
+}
+
+.savings-highlight strong {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #166534;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   TOTAL
+========================================================= */
+
+.total-row {
+    margin-top: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 15px 20px;
+
+    background: #f8fafc;
+
+    border-top: 1px solid #e5e9ef;
+}
+
+.total-row span {
+    color: #344054;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.total-row strong {
+    color: #2563eb;
+
+    font-size: 21px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   ACTION AREA
+========================================================= */
+
+.action-area {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.action-help {
+    color: #98a2b3;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.primary-btn,
+.secondary-btn,
+.whatsapp-btn {
+    min-height: 42px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 9px 16px;
+
+    border-radius: 9px;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background 0.15s ease,
+        border-color 0.15s ease;
+}
+
+.primary-btn {
+    border: 1px solid #2563eb;
+
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+
+    box-shadow:
+        0 6px 14px rgba(37, 99, 235, 0.18);
+
+    transform: translateY(-1px);
+}
+
+.secondary-btn {
+    border: 1px solid #d8dee8;
+
+    background: #ffffff;
+    color: #344054;
+}
+
+.secondary-btn:hover {
+    background: #f8fafc;
+    border-color: #bfc7d4;
+}
+
+.btn-arrow {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.customer-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.form-card {
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe5ec;
+    border-radius: 14px;
+
+    box-shadow:
+        0 2px 8px rgba(16, 24, 40, 0.025);
+}
+
+.form-card-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+}
+
+.form-icon {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 9px;
+
+    background: #eff6ff;
+
+    font-size: 16px;
+}
+
+.form-card-title h3 {
+    color: #101828;
+
+    font-size: 15px;
+}
+
+.form-card-title p {
+    margin-top: 2px;
+
+    color: #667085;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.form-group {
+    min-width: 0;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #344054;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.form-group label span {
+    color: #dc2626;
+}
+
+.form-group label small {
+    margin-left: 4px;
+
+    color: #98a2b3;
+
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    border: 1px solid #d8dee8;
+    border-radius: 8px;
+
+    outline: none;
+
+    padding: 10px 11px;
+
+    background: #ffffff;
+    color: #172033;
+
+    font-size: 11px;
+
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 95px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.07);
+}
+
+.field-help {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #98a2b3;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   DATE TIME
+========================================================= */
+
+.date-time-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon > span {
+    position: absolute;
+
+    left: 11px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
+
+    font-size: 12px;
+}
+
+.input-with-icon input {
+    padding-left: 34px;
+}
+
+
+/* =========================================================
+   SAVED INFO
+========================================================= */
+
+.saved-info-notice {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    padding: 13px;
+
+    border: 1px solid #bbf7d0;
+    border-radius: 11px;
+
+    background: #f0fdf4;
+}
+
+.notice-icon {
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #16a34a;
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.saved-info-notice strong {
+    font-size: 10px;
+}
+
+.saved-info-notice p {
+    margin-top: 2px;
+
+    color: #667085;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   MINI ORDER
+========================================================= */
+
+.mini-order-card {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 9px;
+
+    padding: 14px;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe5ec;
+    border-radius: 12px;
+}
+
+.mini-order-card > div {
+    padding: 10px;
+
+    border-radius: 8px;
+
+    background: #f8fafc;
+}
+
+.mini-order-card span {
+    display: block;
+
+    color: #98a2b3;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 0.6px;
+}
+
+.mini-order-card strong {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #172033;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navigation-buttons {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin-top: 2px;
+}
+
+
+/* =========================================================
+   PAYMENT TOTAL
+========================================================= */
+
+.payment-total-card {
+    max-width: 600px;
+
+    margin: 0 auto 18px;
+
+    padding: 23px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff,
+            #f5f3ff
+        );
+
+    border: 1px solid #dfe6f0;
+    border-radius: 15px;
+}
+
+.payment-total-card span {
+    display: block;
+
+    color: #667085;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.payment-total-card strong {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #2563eb;
+
+    font-size: 32px;
+}
+
+.payment-total-card p {
+    margin-top: 3px;
+
+    color: #667085;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   SCANNER
+========================================================= */
+
+.scanner-card {
+    max-width: 520px;
+
+    margin: 0 auto 18px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe5ec;
+    border-radius: 14px;
+
+    box-shadow:
+        0 2px 8px rgba(16, 24, 40, 0.025);
+}
+
+.scanner-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-align: left;
+
+    margin-bottom: 16px;
+}
+
+.scanner-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #eff6ff;
+    color: #2563eb;
+
+    font-size: 18px;
+}
+
+.scanner-heading h3 {
+    font-size: 15px;
+}
+
+.scanner-heading p {
+    margin-top: 2px;
+
+    color: #667085;
+
+    font-size: 10px;
+}
+
+.scanner-image-wrapper {
+    width: min(100%, 300px);
+
+    margin: 0 auto;
+
+    padding: 10px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    background: #ffffff;
+}
+
+.scanner-image-wrapper img {
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: contain;
+
+    border-radius: 7px;
+}
+
+.download-scanner {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    color: #2563eb;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.download-scanner:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   PAYMENT INSTRUCTION
+========================================================= */
+
+.payment-instruction {
+    margin-top: 17px;
+
+    padding: 13px;
+
+    text-align: left;
+
+    border-radius: 10px;
+
+    background: #f8fafc;
+    border: 1px solid #edf0f4;
+}
+
+.payment-instruction strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #344054;
+
+    font-size: 10px;
+}
+
+.payment-instruction p {
+    margin-top: 3px;
+
+    color: #667085;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   PAYMENT INFO
+========================================================= */
+
+.payment-info-card {
+    max-width: 700px;
+
+    margin: 0 auto 15px;
+
+    padding: 4px 18px;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe5ec;
+    border-radius: 13px;
+}
+
+.payment-info-row {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    min-height: 40px;
+
+    padding: 8px 0;
+
+    border-bottom: 1px solid #edf0f4;
+
+    font-size: 10px;
+}
+
+.payment-info-row:last-child {
+    border-bottom: 0;
+}
+
+.payment-info-row span {
+    color: #667085;
+}
+
+.payment-info-row strong {
+    text-align: right;
+}
+
+.payment-info-row.highlight strong {
+    color: #2563eb;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   PAYMENT NOTE
+========================================================= */
+
+.payment-note {
+    max-width: 700px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    background: #fffbeb;
+
+    border: 1px solid #fde68a;
+
+    color: #92400e;
+
+    font-size: 9px;
+}
+
+.payment-note > span {
+    font-weight: 800;
+}
+
+.payment-note p {
+    flex: 1;
+}
+
+
+/* =========================================================
+   SUCCESS
+========================================================= */
+
+.success-header {
+    text-align: center;
+
+    margin-bottom: 17px;
+}
+
+.success-icon {
+    width: 52px;
+    height: 52px;
+
+    margin: 0 auto 10px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #16a34a;
+    color: #ffffff;
+
+    font-size: 23px;
+    font-weight: 800;
+
+    box-shadow:
+        0 7px 18px rgba(22, 163, 74, 0.15);
+}
+
+.success-header h2 {
+    margin-top: 4px;
+
+    font-size: clamp(24px, 4vw, 32px);
+}
+
+.success-header p {
+    margin-top: 6px;
+
+    color: #667085;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   ORDER ID
+========================================================= */
+
+.order-id-card {
+    max-width: 480px;
+
+    margin: 0 auto 17px;
+
+    padding: 14px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 1px solid #dbe4f0;
+    border-radius: 12px;
+}
+
+.order-id-card span {
+    display: block;
+
+    color: #98a2b3;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.order-id-card strong {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #2563eb;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   FINAL ORDER CARD
+========================================================= */
+
+.final-order-card {
+    background: #ffffff;
+
+    border: 1px solid #dfe5ec;
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 2px 8px rgba(16, 24, 40, 0.03);
+}
+
+
+/* =========================================================
+   INVOICE HEADER
+========================================================= */
+
+.invoice-header {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff,
+            #f5f3ff
+        );
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.invoice-label {
+    color: #667085;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.invoice-header h2 {
+    margin-top: 3px;
+
+    font-size: 19px;
+}
+
+.invoice-header p {
+    margin-top: 2px;
+
+    color: #667085;
+
+    font-size: 10px;
+}
+
+.invoice-status {
+    text-align: right;
+}
+
+.invoice-status span {
+    display: block;
+
+    color: #667085;
+
+    font-size: 8px;
+    font-weight: 800;
+}
+
+.invoice-status strong {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #d97706;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   SUMMARY SECTION
+========================================================= */
+
+.summary-section {
+    padding: 19px;
+
+    border-bottom: 1px solid #edf0f4;
+}
+
+.summary-section:last-child {
+    border-bottom: 0;
+}
+
+.summary-section-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 14px;
+}
+
+.summary-icon {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    background: #eff6ff;
+
+    font-size: 14px;
+}
+
+.summary-section-header h3 {
+    color: #101828;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   SUMMARY GRID
+========================================================= */
+
+.summary-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 13px;
+}
+
+.summary-item {
+    min-width: 0;
+}
+
+.summary-item.full-width {
+    grid-column: 1 / -1;
+}
+
+.summary-item span {
+    display: block;
+
+    color: #98a2b3;
+
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.summary-item strong {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #172033;
+
+    font-size: 11px;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   DATE TIME SUMMARY
+========================================================= */
+
+.date-time-summary {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+}
+
+.requested-time-card {
+    padding: 12px;
+
+    border-radius: 9px;
+
+    background: #f8fafc;
+
+    border: 1px solid #edf0f4;
+}
+
+.requested-time-card span {
+    display: block;
+
+    color: #667085;
+
+    font-size: 8px;
+}
+
+.requested-time-card strong {
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   FINAL PRICE
+========================================================= */
+
+.final-price-list {
+    padding: 0;
+}
+
+.final-total-row {
+    margin-top: 13px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background: #f8fafc;
+
+    border: 1px solid #edf0f4;
+}
+
+.final-total-row span {
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.final-total-row strong {
+    color: #2563eb;
+
+    font-size: 21px;
+}
+
+
+/* =========================================================
+   PAYMENT VERIFICATION
+========================================================= */
+
+.payment-verification-box {
+    padding: 14px;
+
+    border-radius: 10px;
+
+    background: #fffbeb;
+
+    border: 1px solid #fde68a;
+}
+
+.payment-verification-box span {
+    display: block;
+
+    color: #92400e;
+
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.payment-verification-box strong {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #b45309;
+
+    font-size: 12px;
+}
+
+.payment-verification-box p {
+    margin-top: 5px;
+
+    color: #78350f;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   CREATED INFO
+========================================================= */
+
+.created-info {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+}
+
+.created-info > div {
+    padding: 11px;
+
+    border-radius: 8px;
+
+    background: #f8fafc;
+}
+
+.created-info span {
+    display: block;
+
+    color: #98a2b3;
+
+    font-size: 8px;
+}
+
+.created-info strong {
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   SHARE ACTIONS
+========================================================= */
+
+.share-actions {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 17px;
+}
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+.whatsapp-card {
+    max-width: 700px;
+
+    margin: 17px auto;
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe5ec;
+    border-radius: 14px;
+}
+
+.whatsapp-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+.whatsapp-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #16a34a;
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.whatsapp-header h3 {
+    font-size: 14px;
+}
+
+.whatsapp-header p {
+    margin-top: 2px;
+
+    color: #667085;
+
+    font-size: 9px;
+}
+
+.whatsapp-btn {
+    width: 100%;
+
+    margin-top: 13px;
+
+    border: 1px solid #16a34a;
+
+    background: #16a34a;
+    color: #ffffff;
+}
+
+.whatsapp-btn:hover {
+    background: #15803d;
+
+    box-shadow:
+        0 6px 15px rgba(22, 163, 74, 0.16);
+
+    transform: translateY(-1px);
+}
+
+.whatsapp-note {
+    margin-top: 13px;
+
+    padding: 11px;
+
+    border-radius: 8px;
+
+    background: #f8fafc;
+
+    color: #667085;
+
+    font-size: 9px;
+}
+
+.whatsapp-note strong {
+    color: #344054;
+}
+
+.whatsapp-note ol {
+    margin-top: 4px;
+
+    padding-left: 16px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+    padding: 22px 20px;
+
+    text-align: center;
+
+    color: #98a2b3;
+
+    font-size: 9px;
+}
+
+.site-footer p + p {
+    margin-top: 3px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .product-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image-card {
+        min-height: 330px;
+    }
+
+    .product-image-card img {
+        max-height: 300px;
+    }
+
+    .price-comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .price-comparison-section {
+        border-right: 0;
+
+        border-bottom: 1px solid #e7ebf1;
+    }
+
+    .price-comparison-section:last-child {
+        border-bottom: 0;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 620px) {
+
+    .site-header {
+        padding: 13px 15px;
+    }
+
+    .brand-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand h1 {
+        font-size: 16px;
+    }
+
+    .brand p {
+        font-size: 10px;
+    }
+
+
+    /* STEP */
+
+    .step-wrapper {
+        padding: 0 8px;
+
+        margin-top: 15px;
+    }
+
+    .step-item {
+        min-width: 50px;
+    }
+
+    .step-number {
+        width: 29px;
+        height: 29px;
+
+        font-size: 10px;
+    }
+
+    .step-label {
+        font-size: 8px;
+    }
+
+    .step-line {
+        min-width: 20px;
+
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+
+    /* MAIN */
+
+    .main-content {
+        padding: 18px 12px 35px;
+    }
+
+    .section-heading {
+        margin-bottom: 17px;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .section-heading p {
+        font-size: 11px;
+    }
+
+
+    /* PRODUCT */
+
+    .product-layout {
+        gap: 12px;
+    }
+
+    .product-image-card {
+        min-height: 255px;
+
+        padding: 15px;
+    }
+
+    .product-image-card img {
+        max-height: 235px;
+    }
+
+    .product-details {
+        padding: 17px;
+    }
+
+    .product-info h2 {
+        font-size: 22px;
+    }
+
+
+    /* QUICK QUANTITY */
+
+    .quantity-options {
+        grid-template-columns:
+            repeat(5, minmax(0, 1fr));
+
+        gap: 5px;
+    }
+
+    .quantity-option {
+        min-height: 35px;
+
+        padding: 6px 3px;
+
+        font-size: 9px;
+    }
+
+    .quantity-control {
+        max-width: 100%;
+    }
+
+
+    /* PRICE */
+
+    .price-card-header {
+        padding: 15px;
+    }
+
+    .price-list {
+        padding: 5px 15px;
+    }
+
+    .price-comparison-section {
+        padding: 14px 15px;
+    }
+
+    .savings-highlight {
+        margin: 0 15px;
+    }
+
+    .total-row {
+        padding: 14px 15px;
+    }
+
+
+    /* FORM */
+
+    .form-card {
+        padding: 17px;
+    }
+
+    .form-grid,
+    .date-time-grid,
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width,
+    .summary-item.full-width {
+        grid-column: auto;
+    }
+
+
+    /* MINI ORDER */
+
+    .mini-order-card {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    /* NAVIGATION */
+
+    .navigation-buttons {
+        flex-direction: column-reverse;
+
+        align-items: stretch;
+    }
+
+    .navigation-buttons button {
+        width: 100%;
+    }
+
+    .action-area {
+        flex-direction: column-reverse;
+
+        align-items: stretch;
+    }
+
+    .action-area .primary-btn {
+        width: 100%;
+    }
+
+    .action-help {
+        text-align: center;
+    }
+
+
+    /* PAYMENT */
+
+    .payment-total-card {
+        padding: 20px;
+    }
+
+    .payment-total-card strong {
+        font-size: 30px;
+    }
+
+    .scanner-card {
+        padding: 17px;
+    }
+
+    .payment-info-row {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 3px;
+    }
+
+    .payment-info-row strong {
+        text-align: left;
+    }
+
+
+    /* FINAL */
+
+    .invoice-header {
+        flex-direction: column;
+    }
+
+    .invoice-status {
+        text-align: left;
+    }
+
+    .date-time-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .final-total-row {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 4px;
+    }
+
+    .share-actions {
+        flex-direction: column;
+    }
+
+    .share-actions button {
+        width: 100%;
+    }
+
+    .created-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 390px) {
+
+    .step-wrapper {
+        padding: 0 3px;
+    }
+
+    .step-item {
+        min-width: 43px;
+    }
+
+    .step-label {
+        font-size: 7px;
+    }
+
+    .step-line {
+        min-width: 14px;
+
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    .quantity-options {
+        gap: 4px;
+    }
+
+    .quantity-option {
+        min-height: 34px;
+
+        font-size: 8px;
+    }
+
+    .mini-order-card {
+        grid-template-columns: 1fr;
+    }
+
+    .price-card-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .quantity-badge {
+        align-self: flex-start;
+    }
+}
+
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print {
+
+    body {
+        background: #ffffff;
+    }
+
+    .site-header,
+    .step-wrapper,
+    .share-actions,
+    .whatsapp-card,
+    .final-navigation,
+    .site-footer {
+        display: none !important;
+    }
+
+    .main-content {
+        max-width: none;
+
+        padding: 0;
+    }
+
+    .order-step {
+        display: none !important;
+    }
+
+    #summaryStep {
+        display: block !important;
+    }
+
+    .final-order-card {
+        border: 0;
+
+        border-radius: 0;
+
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .site-header {
+        gap: 10px;
+    }
+
+    .header-contact {
+        gap: 5px;
+    }
+
+    .header-contact-label {
+        display: none;
+    }
+
+    .header-contact-number {
+        font-size: 0.72rem;
+    }
+
+}
