@@ -4020,7 +4020,7 @@ function createWhatsAppMessage() {
 
 Please share the payment screenshot for verification.
 
-Thank you for choosing *ARUN DRY ICE*. `;
+Thank you for choosing *ARUN DRY ICE*. ❄️`;
 }
 
 
