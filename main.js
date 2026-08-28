@@ -2715,6 +2715,12 @@ function setupSharing() {
     );
 
 
+    $("topSubmitButton")?.addEventListener(
+        "click",
+        submit
+    );
+
+
     $("whatsappButton")?.addEventListener(
         "click",
         shareOnWhatsApp
