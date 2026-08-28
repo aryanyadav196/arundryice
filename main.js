@@ -1294,6 +1294,18 @@ function updatePriceDisplay() {
 
 
     /* =====================================================
+    REGULAR PRODUCT COST
+    ===================================================== */
+
+    setText(
+        "regularProductCost",
+        formatCurrency(
+            regularProductCost
+        )
+    );
+
+
+    /* =====================================================
        PRICE BREAKDOWN PRODUCT COST
 
        This remains REGULAR PRODUCT COST.
