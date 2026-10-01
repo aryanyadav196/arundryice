@@ -1666,6 +1666,8 @@ function setupNavigation() {
                 )
             );
 
+            submit();
+
         }
     );
 
@@ -3767,6 +3769,8 @@ async function submit() {
 
 
         markOrderCompleted();
+
+        showStep(4);
 
 
         showAlert(
