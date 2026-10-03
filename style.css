@@ -119,10 +119,10 @@ a {
 }
 
 .header-benefits {
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 225px;
+    gap: clamp(24px, 5vw, 90px);
 }
 
 .header-benefit {
